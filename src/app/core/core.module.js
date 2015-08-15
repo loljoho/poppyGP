@@ -9,7 +9,8 @@
       'ngResource',
       'ngSanitize',
 
-      'angular-oauth2'
+      'angular-oauth2',
+      'ngTwitter'
 
 
       ]);
