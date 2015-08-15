@@ -1,0 +1,165 @@
+//
+// GPQuery-Livery Colurs
+// v0.5.0
+//
+// Copyright © 2015
+//
+// @author    Jonathan Ho <joho@joho.io>
+// @created   12-Aug-2015
+// @modified  14-Aug-2015
+//
+// @package GPQuery-Livery
+// @description
+// Sass colour variables for GPQuery suite.
+//
+
+
+
+/* Colours
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// International Motor Racing Colours
+// ------------------------------
+$gpq-ita-red                    : rgba ( 204,   0,   0, 1.00 );     // #cc0000 - rosso corsa
+$gpq-jap-red                    : rgba ( 199,   0,  37, 1.00 );     // #c70025 - japan red
+$gpq-fra-blue                   : rgba (  49, 140, 231, 1.00 );     // #318ce7 - bleu de france
+$gpq-fin-blue                   : rgba (   0,  47, 108, 1.00 );     // #002f6c - finnish flag blue
+$gpq-gbr-green                  : rgba (   1,  66,  37, 1.00 );     // #014225 - british racing green
+$gpq-deu-silver                 : rgba ( 192, 192, 192, 1.00 );     // #c0c0c0 - silver arrows
+$gpq-usa-red                    : rgba ( 178,  34,  52, 1.00 );     // #b22234 - old glory red
+$gpq-usa-blue                   : rgba (  60,  59, 110, 1.00 );     // #3c306e - old glory blue
+
+
+// Constructor Stripes, 2014 - 2015
+// ------------------------------
+
+$gpq-stripe-mer                 : rgba(  42, 180, 164, 1.00 );    // #2ab4a5 - mercedes
+$gpq-stripe-rbr                 : rgba(  79,  26, 171, 1.00 );    // #4f1aab - red bull racing
+$gpq-stripe-mcl                 : rgba( 128, 128, 128, 1.00 );    // #808080 - mclaren
+$gpq-stripe-wil                 : rgba( 255, 255, 255, 1.00 );    // #ffffff - williams
+$gpq-stripe-sfi                 : rgba( 255,  95,  15, 1.00 );    // #ff5f0f - sahara force india
+$gpq-stripe-fer                 : rgba( 195,   0,   0, 1.00 );    // #c30000 - ferrari
+$gpq-stripe-str                 : rgba(   0,   5, 193, 1.00 );    // #0005c1 - scuderia toro rosso
+$gpq-stripe-lot                 : rgba( 255, 184,   0, 1.00 );    // #ffb800 - lotus
+$gpq-stripe-sau                 : rgba(   0,  99, 255, 1.00 );    // #0063ff - sauber
+$gpq-stripe-mar                 : rgba( 110,   0,   0, 1.00 );    // #6e0000 - marussia
+$gpq-stripe-cat                 : rgba(   0, 108,   0, 1.00 );    // #006c00 - caterham
+
+
+//  Driver Colours, 2015
+//  ------------------------------
+
+$gpq-driver-ric                 : rgba(  79,  26, 171, 1.00 );    // Ricciardo
+$gpq-driver-kvy                 : rgba(  64,  21, 138, 1.00 );    // Kvyat
+$gpq-driver-ham                 : rgba(  42, 180, 165, 1.00 );    // Hamilton
+$gpq-driver-ros                 : rgba(  34, 145, 132, 1.00 );    // Rosberg
+$gpq-driver-vet                 : rgba( 195,   0,   0, 1.00 );    // Vettel
+$gpq-driver-rai                 : rgba( 155,   0,   0, 1.00 );    // Raikkonen
+$gpq-driver-gro                 : rgba( 255, 184,   0, 1.00 );    // Grosjean
+$gpq-driver-pal                 : rgba( 255, 184,   0, 1.00 );    // Palmer
+$gpq-driver-mal                 : rgba( 204, 146,   0, 1.00 );    // Maldonado
+$gpq-driver-sai                 : rgba(   0,   5, 193, 1.00 );    // Sainz
+$gpq-driver-ves                 : rgba(   0,   5, 155, 1.00 );    // Verstappen
+$gpq-driver-but                 : rgba( 128, 128, 128, 1.00 );    // Button
+$gpq-driver-alo                 : rgba( 102, 102, 102, 1.00 );    // Alonso
+$gpq-driver-mag                 : rgba( 102, 102, 102, 1.00 );    // Magnussen
+$gpq-driver-mar                 : rgba(   0,  99, 255, 1.00 );    // Mar
+$gpq-driver-nas                 : rgba(   0,  99, 255, 1.00 );    // Nasr
+$gpq-driver-eri                 : rgba(   0,  78, 204, 1.00 );    // Ericsson
+$gpq-driver-hul                 : rgba( 255,  95,  15, 1.00 );    // Hulkenberg
+$gpq-driver-per                 : rgba( 216,  72,   0, 1.00 );    // Perez
+$gpq-driver-ste                 : rgba( 110,   0,   0, 1.00 );    // Stevens
+$gpq-driver-mer                 : rgba(  88,   0,   0, 1.00 );    // Merhi
+$gpq-driver-mas                 : rgba( 255, 255, 255, 1.00 );    // Massa
+$gpq-driver-bot                 : rgba( 204, 204, 204, 1.00 );    // Bottas
+$gpq-driver-wol                 : rgba( 204, 204, 204, 1.00 );    // Wolff
+$gpq-driver-def                 : rgba( 255, 255, 255, 1.00 );    // Default
+
+
+// Live Timing
+// ------------------------------
+
+$gpq-live-timing-green          : #00ff03;
+$gpq-live-timing-purple         : #ff00fc;
+$gpq-live-timing-blue           : #0000ff;
+$gpq-live-timing-yellow         : #ffff00;
+$gpq-live-timing-red            : #ff0000;
+
+
+
+
+/* Data Table - Light Theme
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Table
+// ------------------------------
+
+$gpq-light-table-background     : rgba( 255, 255, 255, 1.00 );    // #ffffff - base background, white
+$gpq-light-table-border         : none;
+
+
+// Table Rows
+// ------------------------------
+
+$gpq-light-table-tr             : $gpq-light-table-background;
+$gpq-light-table-tr-alt         : $gpq-light-table-tr;
+$gpq-light-table-tr-hover       : $gpq-light-table-tr;
+
+
+// Table Cells
+// ------------------------------
+
+$gpq-light-table-td             : transparent;
+
+$gpq-light-table-td-text        : rgba(  74,  74,  74, 1.00 );    // #4a4a4a - base text, dark grey
+$gpq-light-table-td-gray        : rgba( 128, 128, 128, 1.00 );    // #808080 - secondary text, grey
+
+$gpq-light-table-td-red         : rgba( 234,   4,  23, 1.00 );    // #ea0417; - data text, red
+$gpq-light-table-td-green       : rgba(  50, 172,   5, 1.00 );    // #32ac05; - data text, green
+$gpq-light-table-td-blue        : rgba(  95, 176, 232, 1.00 );    // #5fb0e8; - data text, blue
+$gpq-light-table-td-yellow      : rgba( 249, 207,   0, 1.00 );    // #f9cf00; - data text, yellow
+
+
+// Table Header Cells
+// ------------------------------
+
+$gpq-light-table-th             : rgba( 176, 176, 176, 1.00 );    // #b0b0b0 - background, light grey
+$gpq-light-table-th-text        : rgba( 255, 255, 255, 1.00 );    // #ffffff - text, white
+
+
+
+
+/* Data Table - Dark Theme
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Table
+// ------------------------------
+$gpq-dark-table-background      : rgba(  36,  36,  36, 1.00 );    // #242424 - background, dark grey
+$gpq-dark-table-border          : none;
+
+
+// Table Rows
+// ------------------------------
+
+$gpq-dark-table-tr              : rgba(  50,  50,  50, 1.00 );    // #323232 - table row, lighter grey
+$gpq-dark-table-tr-alt          : rgba(  36,  36,  36, 1.00 );    // #242424 - table row alt, darker grey
+$gpq-dark-table-tr-hover        : rgba(  80,  80,  80, 1.00 );    // #505050 - table row hover, light grey
+
+
+// Table Header
+// ------------------------------
+
+$gpq-dark-table-th              : transparent;
+$gpq-dark-table-th-text         : rgba( 115, 115, 115, 1.00 );    // #737373 - table header text, grey
+
+
+// Table Cells
+// ------------------------------
+
+$gpq-dark-table-td              : transparent;
+
+$gpq-dark-table-td-text         : rgba( 255, 255, 255, 1.00 );    // #ffffff - table cell text, white
+
+$gpq-dark-table-td-text-red     : rgba( 255,   0,   0, 1.00 );    // #ff0000 - table cell text, red
+$gpq-dark-table-td-text-yellow  : rgba( 255, 255,   0, 1.00 );    // #ffff00 - table cell text, yellow
+$gpq-dark-table-td-text-green   : rgba(  20, 190, 150, 1.00 );    // #14be96 - table cell text, green

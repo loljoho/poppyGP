@@ -1,0 +1,106 @@
+// Multiplier Function
+@function rem($multiplier) {
+  $font-size: 10px;
+  @return $multiplier * $font-size;
+}
+
+
+
+/* Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$baseline-grid: 8px;
+$gutter-width:  ($baseline-grid * 2);
+$viewport-xs:   450px;  // Mobile, Portrait
+$viewport-sm:   600px;  // Mobile, Landscape
+$viewport-md:   960px;  // Tablets & Laptops
+$viewport-lg:   1200px; // Large Screens
+$viewport-xl:   1600px; // 'MURRICA
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Font Face
+// ------------------------------
+$font-family: 'Source Sans Pro', Verdana, sans-serif;
+$font-size:   10px;
+
+
+// Base Sizes
+// ------------------------------
+$header-font-size:    rem(2.400);
+$title-font-size:     rem(2.000);
+$subtitle-font-size:  rem(1.600);
+
+$body-font-size:      rem(1.400);
+$caption-font-size:   rem(1.200);
+
+
+
+/* Global Colours
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$main-background:   rgba(0, 0, 0, 0.87);
+
+
+/* Navbar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$navbar-height:        36px;
+$navbar-padding:       16px;
+
+$navbar-font-size:        18px;
+$navbar-font-spacing:     0.005em;
+$navbar-font-weight:      400;
+$navbar-font-color:       #fff;
+$navbar-background-color: rgba(34, 34, 34, 1.00);
+
+$navbar-button-margin:    6px;
+$navbar-button-height:    24px;
+$navbar-button-width:     24px;
+$navbar-button-padding:   1px;
+
+
+/* content
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$content-padding:           16px;
+
+$content-font-spacing:      0.005em;
+$content-font-weight:       400;
+$content-font-color:        rgba(0, 0, 0, 0.87);
+$content-background-color:  rgba(204, 212, 204, 1.00);
+
+
+
+/* Video Flex Dimensions
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$video-height-xs:   33.3%;
+$video-height-sm:   40.0%;
+$video-width-sm:    60%;
+$video-width-md:    65%;
+$video-width-lg:    70%;
+$video-width-xl:    75%;
+
+
+/* Content Flex Dimensions
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$content-height-xs: (100 - $video-height-xs);
+$content-height-sm: (100 - $video-height-sm);
+$content-width-sm:  (100 - $video-width-sm);
+$content-width-md:  (100 - $video-width-md);
+$content-width-lg:  (100 - $video-width-lg);
+$content-width-xl:  (100 - $video-width-xl);
+
+
+/* Angular-Material Easing Curves
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$swift-ease-out-duration: 0.4s !default;
+$swift-ease-out-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1) !default;
+$swift-ease-out: all $swift-ease-out-duration $swift-ease-out-timing-function !default;
+
+$swift-ease-in-duration: 0.3s !default;
+$swift-ease-in-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2) !default;
+$swift-ease-in: all $swift-ease-in-duration $swift-ease-in-timing-function !default;
+
+$swift-ease-in-out-duration: 0.5s !default;
+$swift-ease-in-out-timing-function: cubic-bezier(0.35, 0, 0.25, 1) !default;
+$swift-ease-in-out: all $swift-ease-in-out-duration $swift-ease-in-out-timing-function !default;

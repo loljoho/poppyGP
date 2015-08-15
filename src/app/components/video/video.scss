@@ -1,0 +1,79 @@
+gp-video {
+  box-sizing: border-box;
+  display: flex;
+
+  position: relative;
+  z-index: 1;
+
+  >iframe {
+    @include absolute-height(100%);
+    @include absolute-width(100%);
+  }
+
+  &.fullscreen {
+    @include absolute-width(100%);
+    @include absolute-height(100%);
+  }
+}
+
+
+// Non-Mobile Viewports
+// ------------------------------
+@media (min-width: $viewport-sm) {
+  gp-video {
+    @include absolute-height(100%);
+  }
+}
+
+// Viewports 450px-
+// ------------------------------
+@media (max-width: $viewport-xs - 1) {
+  gp-video {
+    @include absolute-width(100%);
+    @include absolute-height($video-height-xs);
+  }
+}
+
+// Viewports 450 - 600px
+// ------------------------------
+@media (min-width: $viewport-xs) and (max-width: $viewport-sm) {
+  gp-video {
+    @include absolute-width(100%);
+    @include absolute-height($video-height-sm);
+  }
+}
+
+// Viewports 600 - 960px
+// ------------------------------
+@media (min-width: $viewport-sm) and (max-width: $viewport-lg - 1) {
+  gp-video {
+    @include video-width($video-width-sm);
+  }
+}
+
+
+// Viewports 960 - 1200px
+// ------------------------------
+@media (min-width: $viewport-md) and (max-width: $viewport-xl - 1) {
+  gp-video {
+    @include video-width($video-width-md);
+  }
+}
+
+
+// Viewports 1200 - 1600px
+// ------------------------------
+@media (min-width: $viewport-lg) and (max-width: $viewport-xl - 1) {
+  gp-video {
+    @include video-width($video-width-lg);
+  }
+}
+
+
+// Viewports 1600px+
+// ------------------------------
+@media (min-width: $viewport-xl) {
+  gp-video {
+    @include video-width($video-width-xl);
+  }
+}

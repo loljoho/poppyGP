@@ -1,0 +1,22 @@
+@mixin absolute-height($height) {
+  min-height: $height;
+  max-height: $height;
+  height: $height;
+}
+@mixin absolute-width($width) {
+  min-width: $width;
+  max-width: $width;
+  width: $width;
+}
+@mixin absolute-square($size) {
+  min-width: $size;
+  max-width: $size;
+  width: $size;
+  min-height: $size;
+  max-height: $size;
+  height: $size;
+}
+@mixin video-width($width) {
+  min-width: $width;
+  width: $width;
+}

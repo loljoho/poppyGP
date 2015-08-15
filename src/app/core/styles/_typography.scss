@@ -1,0 +1,21 @@
+
+/* Global
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html, body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.00);
+  -webkit-touch-callout: none;
+
+  // fill viewport height with page
+  min-height: 100%;
+
+  // iOS font adjustments
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: $font-family;
+}
+
+// Typography
+// ------------------------------
