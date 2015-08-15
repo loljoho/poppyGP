@@ -2,13 +2,14 @@
   'use strict';
 
   angular
-    .module('poppyGP.core')
+    .module('poppyGP.content')
     .factory('twitterService', twitterServiceFactory);
 
   // Twitter API Limits
   // ------------------------------
+  // GET search/tweets
   //
-  // 
+  // @see https://dev.twitter.com/rest/public/rate-limits
 
 
   /** @ngInject */
