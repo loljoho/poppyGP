@@ -6,7 +6,7 @@
     .factory('coreService', coreServiceFactory);
 
   /** @ngInject */
-  function coreServiceFactory($resource, $log) {
+  function coreServiceFactory($resource) {
 
     // Parameterised URL
     var url = 'assets/data/:resource.json';

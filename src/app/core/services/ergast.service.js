@@ -11,7 +11,7 @@
   // 200 requests within 1 hour
 
   /** @ngInject */
-  function ergastServiceFactory($resource, $log) {
+  function ergastServiceFactory($resource) {
 
 
     /* Paramaterised URL

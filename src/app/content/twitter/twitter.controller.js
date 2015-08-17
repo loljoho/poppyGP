@@ -6,7 +6,7 @@
     .controller('TwitterController', TwitterController);
 
   /** @ngInject */
-  function TwitterController($twitterApi) {
+  function TwitterController($twitterApi, twitterService) {
     var vm = this;
 
     vm.twitterKey   = 'STORAGE.TWITTER.KEY';
@@ -16,7 +16,7 @@
     activate();
 
     function activate() {
-
+      twitterService.getAuthToken();
     }
   }
 })();

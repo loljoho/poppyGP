@@ -14,10 +14,11 @@
 
   /** @ngInject */
   function twitterServiceFactory($resource) {
+    var credentials     = btoa(consumerKey + ':' + consumerSecret);
 
-    /* Paramaterised URL
+    /* Parameterised URL
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    var url = '../api/:resource.json';
+    var url = 'https://api.twitter.com/';
 
     /* Default Parameters
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -28,6 +29,15 @@
     /* Custom Resource Actions
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     var actions = {
+      getAuthToken: {
+        method: 'POST',
+        url: 'https://api.twitter.com/oauth2/token',
+        headers: {
+          'Authorization': 'Basic ' + credentials,
+          'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+        },
+        data: 'grant_type=client_credentials'
+      },
       getResource: {
         method: 'GET',
         params: {
