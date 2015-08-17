@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-
+// http://devdactic.com/twitter-rest-api-angularjs/
   angular
     .module('poppyGP.content')
     .controller('TwitterController', TwitterController);
@@ -12,11 +12,6 @@
     vm.twitterKey   = 'STORAGE.TWITTER.KEY';
     vm.twitterToken = '';
     vm.tweet        = {};
-
-    vm.apiConfig = {
-      key:    "knFBSfeZzxHSK182Ui8iEhmBF",
-      secret: "6mXHJJo35AbDXhp3QsCe4qtuYOtecnQlSzbFTmsLjrZJXObfNJ"
-    };
 
     activate();
 

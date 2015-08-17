@@ -3,7 +3,7 @@
 
   angular
     .module('poppyGP.content')
-    .factory('twitterService', twitterServiceFactory);
+    .factory('twitterApiTokenService', twitterApiTokenServiceFactory);
 
   // Twitter API Limits
   // ------------------------------
@@ -13,7 +13,15 @@
 
 
   /** @ngInject */
-  function twitterServiceFactory($resource) {
+  function twitterApiTokenServiceFactory(OAuthProvider) {
+    
+    OAuthProvider.configure({
+      baseUrl       : 'https://api.twitter.com',
+      clientId      : '',
+      clientSecret  : '',
+      grantPath     : 'oauth2/token',
+      revokePath    : 'oauth2/invalidate_token'
+    });
 
     /* Paramaterised URL
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
