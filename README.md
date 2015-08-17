@@ -10,7 +10,7 @@ Tasklist
  * [ ] Move `src/app/core/services/` to individual `src/app/content/` subdirectories:
    * [ ] `src/app/content/ergast/`
    * [ ] `src/app/content/reddit/`
-   * [ ] `src/app/content/twitter/`
+   * [x] `src/app/content/twitter/`
  * [ ] Implement navbar button `ng-click`
    * [ ] Open Donation Modal
    * [ ] Open Twitter Confirm Link  
