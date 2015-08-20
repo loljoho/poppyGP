@@ -1,0 +1,144 @@
+// Angular-Material
+//
+// http://material.angularjs.org
+//
+// The MIT License
+//
+// Copyright (c) 2014-2015 Google, Inc. http://angularjs.org
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+
+
+/* Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a.md-button,
+.md-button {
+
+  &:not([disabled]) {
+    &:hover {
+      background-color: $md-background - 0.2;
+    }
+    &.md-focused {
+      background-color: $md-background - 0.2;
+    }
+    &.md-icon-button:hover {
+      background-color: transparent;
+    }
+  }
+
+  &.md-primary {
+    color: $md-primary;
+    &.md-raised {
+      color: $md-primary-contrast;
+      background-color: $md-primary;
+      &:not([disabled]) {
+        md-icon {
+          color: $md-primary-contrast;
+        }
+        &:hover {
+          background-color: $md-primary;
+        }
+        &.md-focused {
+          background-color: $md-primary-light;
+        }
+      }
+    }
+    &:not([disabled]) {
+      md-icon {
+        color: $md-primary;
+      }
+    }
+  }
+
+  &.md-raised {
+    color: $md-background-contrast;
+    background-color: $md-background-lighter;
+    &:not([disabled]) {
+      .md-icon {
+        color: $md-background-contrast;
+      }
+      &:hover {
+        background-color: $md-background-lighter;
+      }
+      &.md-focused {
+        background-color: $md-background-light;
+      }
+    }
+  }
+
+  &.md-warn {
+    color: $md-warn;
+
+    &.md-raised {
+      color: $md-warn-contrast;
+      background-color: $md-warn;
+      &:not([disabled]) {
+        md-icon {
+          color: $md-warn-contrast;
+        }
+        &:hover {
+          background-color: $md-warn;
+        }
+        &.md-focused {
+          background-color: $md-warn-dark;
+        }
+      }
+    }
+    &:not([disabled]) {
+      md-icon {
+        color: $md-warn;
+      }
+    }
+  }
+
+  &.md-accent {
+    color: $md-accent;
+    &.md-raised {
+      color: $md-accent-contrast;
+      background-color: $md-accent;
+      &:not([disabled]) {
+        md-icon {
+          color: $md-accent-contrast;
+        }
+        &:hover {
+          background-color: $md-accent;
+        }
+        &.md-focused {
+          background-color: $md-accent-dark;
+        }
+      }
+    }
+    &:not([disabled]) {
+      md-icon {
+        color: $md-accent;
+      }
+    }
+  }
+
+  &[disabled],
+  &.md-raised[disabled],
+  &.md-accent[disabled],
+  &.md-warn[disabled] {
+    color: $md-foreground-3;
+    cursor: not-allowed;
+
+    md-icon {
+      color: $md-foreground-3;
+    }
+  }
+  &.md-raised[disabled] {
+    background-color: $md-foreground-4;
+  }
+  &[disabled] {
+    background-color: transparent;
+  }
+}
