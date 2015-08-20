@@ -44,8 +44,8 @@ $main-background:   rgba(0, 0, 0, 0.87);
 
 /* Navbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-$navbar-height:        36px;
-$navbar-padding:       16px;
+$navbar-height:           36px;
+$navbar-padding:          16px;
 
 $navbar-font-size:        18px;
 $navbar-font-spacing:     0.005em;
@@ -104,3 +104,4 @@ $swift-ease-in: all $swift-ease-in-duration $swift-ease-in-timing-function !defa
 $swift-ease-in-out-duration: 0.5s !default;
 $swift-ease-in-out-timing-function: cubic-bezier(0.35, 0, 0.25, 1) !default;
 $swift-ease-in-out: all $swift-ease-in-out-duration $swift-ease-in-out-timing-function !default;
+

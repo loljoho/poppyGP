@@ -26,6 +26,47 @@ gp-navbar {
   }
 
 
+  .gp-button {
+    height: $navbar-button-height;
+    width:  $navbar-button-width;
+
+    margin-top:     0px;
+    margin-bottom:  0px;
+    padding-left:   0px;
+    padding-right:  0px;
+
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+
+
+    &:first-child {
+      margin-left:  ( 0 - $navbar-button-margin);
+    }
+    &:last-child {
+      margin-right: ( 0 - $navbar-button-margin);
+    }
+
+    &.donate {
+      padding-top: ($navbar-button-padding + 1.25);
+      >svg {
+        @include absolute-height($navbar-button-height - 6);
+        @include absolute-width($navbar-button-width - 7);
+      }
+    }
+    &.twitter {
+      padding-top: ($navbar-button-padding + 2.00);
+      >svg {
+        @include absolute-height($navbar-button-height - 4);
+        @include absolute-width($navbar-button-width - 4);
+      }
+    }
+    &.config {
+      padding-top: ($navbar-button-padding + 3.25);
+    }
+  }
+
+
   // Buttons
   // ------------------------------
   .button {
@@ -42,33 +83,12 @@ gp-navbar {
 
     cursor: pointer;
 
-    &:hover,
-    &:active {
-      //background-color: #111;
-    }
+
     &:first-child {
-      margin-left: ($navbar-button-margin * 1.25);
+      //margin-left: ($navbar-button-margin * 1.25);
     }
     &:last-child {
-      margin-right: ($navbar-button-margin * 1.25);
-    }
-
-    &.donate {
-      padding-top: ($navbar-button-padding + 3.25);
-      >svg {
-        @include absolute-height($navbar-button-height - 6);
-        @include absolute-width($navbar-button-width - 7);
-      }
-    }
-    &.twitter {
-      padding-top: ($navbar-button-padding + 2.00);
-      >svg {
-        @include absolute-height($navbar-button-height - 4);
-        @include absolute-width($navbar-button-width - 4);
-      }
-    }
-    &.config {
-      padding-top: ($navbar-button-padding);
+      //margin-right: ($navbar-button-margin * 1.25);
     }
 
 

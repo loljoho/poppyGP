@@ -5,11 +5,14 @@
 
 @import 'core/styles/variables';
 @import 'core/styles/gpquery';
+@import 'core/styles/theme';
 @import 'core/styles/mixins';
 
 @import 'core/styles/typography';
 @import 'core/styles/layout';
 @import 'core/styles/structure';
+
+@import 'common/material/main';
 
 .content {
   overflow-x: hidden;

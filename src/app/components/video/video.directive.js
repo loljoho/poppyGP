@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('poppyGP')
+    .module('poppyGP.components')
     .directive('gpVideo', gpVideoDirective);
 
   /* @ngInject */
@@ -26,7 +26,7 @@
       function activate() {
         vm.joho = 'Joho';
       }
-      
+
     }
 
   }
