@@ -47,29 +47,35 @@ gp-navbar {
       margin-right: ( 0 - $navbar-button-margin);
     }
 
+    &.menu {
+      padding-top: ($navbar-button-padding + 2.25);
+    }
     &.bitcoin {
-      padding-top: ($navbar-button-padding + 1.00);
+      padding-top: ($navbar-button-padding);
       >svg {
         @include absolute-height($navbar-button-height - 3);
         @include absolute-width($navbar-button-width - 3);
       }
     }
     &.paypal {
-      padding-top: ($navbar-button-padding + 1.33);
+      padding-top: ($navbar-button-padding + 0.33);
       >svg {
         @include absolute-height($navbar-button-height - 6);
         @include absolute-width($navbar-button-width - 6);
       }
     }
     &.twitter {
-      padding-top: ($navbar-button-padding + 2.00);
+      padding-top: ($navbar-button-padding + 1.00);
       >svg {
         @include absolute-height($navbar-button-height - 4);
         @include absolute-width($navbar-button-width - 4);
       }
     }
     &.config {
-      padding-top: ($navbar-button-padding + 3.25);
+      padding-top: ($navbar-button-padding + 2.25);
+    }
+    &.fullscreen {
+      padding-top: ($navbar-button-padding + 1.00);
     }
   }
 
