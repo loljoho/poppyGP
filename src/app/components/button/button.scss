@@ -1,0 +1,135 @@
+// Angular-Material
+//
+// http://material.angularjs.org
+//
+// The MIT License
+//
+// Copyright (c) 2014-2015 Google, Inc. http://angularjs.org
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$button-border-radius:        3px !default;
+$button-icon-border-radius:   50% !default;
+
+$button-font-size:            rem(1.400) !default;
+$button-line-height:          rem(3.60) !default;
+$button-padding:              0 rem(0.600) !default;
+$button-margin:               rem(0.600) rem(0.800) !default;
+$button-min-width:            rem(8.800) !default;
+
+$icon-button-height:          $navbar-button-height;  //rem(4.800) !default;
+$icon-button-width:           $navbar-button-width;   //rem(4.800) !default;
+$icon-button-margin:          $navbar-button-margin;  //rem(0.600) !default;
+
+/* Button Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.gp-button {
+  border-radius: $button-border-radius;
+  box-sizing: border-box;
+  color: currentColor;
+
+  user-select: none;
+  position: relative; //for child absolute-positioned <canvas>
+
+  outline: none;
+  border: 0;
+  display: inline-block;
+  align-items: center;
+
+  padding:      $button-padding;
+  margin:       $button-margin;
+  line-height:  $button-line-height;
+  min-height:   $button-line-height;
+  background:   transparent;
+  white-space:  nowrap;
+
+  min-width:    $button-min-width;
+
+  text-align: center;
+
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: $button-font-size;
+  font-style: inherit;
+  font-variant: inherit;
+  font-family: inherit;
+  text-decoration: none;
+
+  cursor: pointer;
+  overflow: hidden;   // for ink containment
+
+  transition: box-shadow $swift-ease-out-duration $swift-ease-out-timing-function,
+              background-color $swift-ease-out-duration $swift-ease-out-timing-function;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0, 0.20),
+                0 3px 6px rgba(0,0,0, 0.28);
+  }
+  &:active {
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.19),
+                0  6px  6px rgba(0,0,0, 0.23);
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+
+  &.ng-hide, &.ng-leave {
+    transition: none;
+  }
+
+  &.gp-cornered {
+    border-radius: 0;
+  }
+
+  &.gp-icon {
+    padding: 0;
+    background: none;
+  }
+
+  &.gp-raised {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  }
+
+  &.gp-icon-button {
+    margin: 0 $icon-button-margin;
+    height: $icon-button-height;
+    //min-width: 0;
+    line-height: $icon-button-height;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: $icon-button-width;
+    width: $icon-button-width;
+    max-width: $icon-button-width * 1.25;
+    border-radius: $button-icon-border-radius;
+  }
+
+  &.gp-raised {
+    &.gp-focused {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+    &:active {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .gp-button.gp-raised {
+    border: 1px solid #fff;
+  }
+}
