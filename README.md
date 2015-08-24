@@ -3,34 +3,22 @@ poppyGP Player
 
 __poppyGP-player__ is a community-centered video and IRC channel web application
 
-Tasklist
---------
- * [ ] Move `src/app/components/content/` to `src/app/content/`
- * [ ] Create new module `poppyGP.content`
- * [ ] Move `src/app/core/services/` to individual `src/app/content/` subdirectories:
-   * [ ] `src/app/content/ergast/`
-   * [ ] `src/app/content/reddit/`
-   * [ ] `src/app/content/twitter/`
- * [ ] Implement navbar button `ng-click`
-   * [ ] Open Donation Modal
-   * [ ] Open Twitter Confirm Link  
-   * [ ] Toggle Fullscreen
- * [ ] Implement Twitter features:
-   * [ ] API integration and `toastr` for `#poppyGP` or `@poppyGrandPrix` updates
-   * [ ] Last Tweet Directive
 
 
 Overview
 --------
 
-__Client Dependencies__
+__Main Client Dependencies__
 
  * [AngularJS][angular] `1.4.x`
-   * Angular-Animate
-   * Angular-Cookies
-   * Angular-Resource
-   * Angular-Sanitize
-   * Angular-Touch
+   * ngAnimate
+   * ngCookies
+   * ngResource
+   * ngSanitize
+   * ngTouch
+
+__Module Client Dependencies__
+
  * [Moment.js][moment] `2.10.x`
  * [Snoocore][snoocore] `3.2.x`
 
