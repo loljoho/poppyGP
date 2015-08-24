@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('poppyGP.components')
+    .module('poppyGP.layout')
     .controller('NavbarController', NavbarController);
 
 

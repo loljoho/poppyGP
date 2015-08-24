@@ -47,11 +47,18 @@ gp-navbar {
       margin-right: ( 0 - $navbar-button-margin);
     }
 
-    &.donate {
-      padding-top: ($navbar-button-padding + 1.25);
+    &.bitcoin {
+      padding-top: ($navbar-button-padding + 1.00);
+      >svg {
+        @include absolute-height($navbar-button-height - 3);
+        @include absolute-width($navbar-button-width - 3);
+      }
+    }
+    &.paypal {
+      padding-top: ($navbar-button-padding + 1.33);
       >svg {
         @include absolute-height($navbar-button-height - 6);
-        @include absolute-width($navbar-button-width - 7);
+        @include absolute-width($navbar-button-width - 6);
       }
     }
     &.twitter {

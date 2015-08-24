@@ -5,7 +5,8 @@
 
     'poppyGP.core',
 
-    'poppyGP.components'
+    'poppyGP.components',
+    'poppyGP.layout'
 
     ]);
 

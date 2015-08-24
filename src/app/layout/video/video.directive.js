@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('poppyGP.components')
+    .module('poppyGP.layout')
     .directive('gpVideo', gpVideoDirective);
 
   /* @ngInject */
@@ -11,7 +11,7 @@
       restrict: 'E',
       replace: false,
       transclude: false,
-      templateUrl: 'app/components/video/video.html',
+      templateUrl: 'app/layout/video/video.html',
       controller: VideoController,
       controllerAs: 'vm'
     };
