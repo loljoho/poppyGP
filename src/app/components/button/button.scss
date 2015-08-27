@@ -18,18 +18,18 @@
 
 /* Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-$button-border-radius:        3px !default;
-$button-icon-border-radius:   50% !default;
+$button-border-radius:        3px;
+$button-icon-border-radius:   50%;
 
-$button-font-size:            rem(1.400) !default;
-$button-line-height:          rem(3.60) !default;
-$button-padding:              0 rem(0.600) !default;
-$button-margin:               rem(0.600) rem(0.800) !default;
-$button-min-width:            rem(8.800) !default;
+$button-font-size:            rem(1.400);
+$button-line-height:          rem(3.60);
+$button-padding:              0 rem(0.600);
+$button-margin:               rem(0.600) rem(0.800);
+$button-min-width:            rem(8.800);
 
-$icon-button-height:          $navbar-button-height;  //rem(4.800) !default;
-$icon-button-width:           $navbar-button-width;   //rem(4.800) !default;
-$icon-button-margin:          $navbar-button-margin;  //rem(0.600) !default;
+$icon-button-height:          rem(2.400);  //rem(4.800);
+$icon-button-width:           rem(2.400);   //rem(4.800);
+$icon-button-margin:          rem(0.600);  //rem(0.600);
 
 /* Button Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

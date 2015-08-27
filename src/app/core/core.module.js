@@ -9,9 +9,11 @@
       'ngResource',
       'ngSanitize',
 
+      'winjs',
+
       'angular-oauth2'
 
 
-      ]);
+    ]);
 
 })();
