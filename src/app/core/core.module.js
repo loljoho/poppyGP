@@ -8,10 +8,7 @@
       'ngTouch',
       'ngResource',
       'ngSanitize',
-
-      'winjs',
-
-      'angular-oauth2'
+      'mgcrea.ngStrap'
 
 
     ]);

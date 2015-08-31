@@ -3,16 +3,16 @@
 
   angular
     .module('poppyGP.layout')
-    .directive('gpContent', gpContentDirective);
+    .directive('gpSidebar', gpSidebarDirective);
 
   /** @ngInject */
-  function gpContentDirective() {
+  function gpSidebarDirective() {
     var directive = {
       restrict: 'E',
       replace: false,
       transclude: true,
-      templateUrl: 'app/layout/content/content.html',
-      controller: 'ContentController',
+      templateUrl: 'app/layout/sidebar/sidebar.html',
+      controller: 'SidebarController',
       controllerAs: 'vm',
       bindToController: true
     };

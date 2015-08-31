@@ -26,14 +26,7 @@ $navbar-button-padding:       2px;
 gp-navbar {
 
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 4;
+  display: block;
 
   font-size: $navbar-font-size;
 
@@ -133,7 +126,7 @@ gp-navbar {
   }
 
 
-  nav {
+  .navbar {
     font-size: $navbar-font-size;
     letter-spacing: $navbar-font-spacing;
     font-weight: $navbar-font-weight;
