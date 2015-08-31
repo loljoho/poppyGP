@@ -5,10 +5,10 @@
     .module('poppyGP.core', [
       'ngAnimate',
       'ngCookies',
+      'ngMaterial',
       'ngTouch',
       'ngResource',
-      'ngSanitize',
-      'mgcrea.ngStrap'
+      'ngSanitize'
 
 
     ]);

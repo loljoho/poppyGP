@@ -5,13 +5,10 @@
     "angular": "~1.4.3",
     "angular-animate": "~1.4.3",
     "angular-cookies": "~1.4.3",
-    "angular-oauth2": "~3.0.1",
+    "angular-material": "~0.10.1",
     "angular-resource": "~1.4.4",
     "angular-sanitize": "~1.4.3",
-    "angular-strap": "~2.3.1",
     "angular-touch": "~1.4.3",
-    "animate.css": "~3.3.0",
-    "jquery": "~2.1.4",
     "malarkey": "yuanqing/malarkey#~1.3.0",
     "modernizr": "~2.8.3",
     "moment": "~2.10.3",
@@ -20,16 +17,6 @@
   "devDependencies": {
     "angular-mocks": "~1.4.3"
   },
-  "resolutions": {
-    "jquery": "~2.1.4"
-  },
   "overrides": {
-    "winjs": {
-      "main": [
-        "./js/base.js",
-        "./js/ui.js",
-        "./css/ui-dark.css"
-      ]
-    }
   }
 }
