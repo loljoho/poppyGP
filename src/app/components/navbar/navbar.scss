@@ -1,0 +1,84 @@
+/* Navbar Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$navbar-height:               36px;
+$navbar-padding:              16px;
+
+$navbar-font-size:            18px;
+$navbar-font-spacing:         0.005em;
+$navbar-font-weight:          400;
+$navbar-background-color:     rgba(34, 34, 34, 1.00);
+
+$navbar-font-color:           rgba(255, 255, 255, 1.00);
+$navbar-font-color-secondary: rgba(255, 255, 255, 0.60);
+$navbar-font-color-disabled:  rgba(255, 255, 255, 0.20);
+$navbar-font-color-accent:    $gpq-color-base-blue;
+$navbar-font-color-alert:     $gpq-color-base-red;
+
+$navbar-button-margin:        6px;
+$navbar-button-height:        24px;
+$navbar-button-width:         24px;
+$navbar-button-padding:       2px;
+
+/* Navbar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+md-toolbar.navbar {
+
+  font-size: $navbar-font-size;
+
+  height: $navbar-height;
+  min-height: $navbar-height;
+  max-height: $navbar-height;
+  background-color: $navbar-background-color;
+
+  .md-toolbar-tools {
+
+    height: $navbar-height;
+    min-height: $navbar-height;
+    max-height: $navbar-height;
+
+    .md-icon-button {
+      height: 24px;
+      width: 24px;
+      line-height: 24px;
+    }
+
+  }
+}
+
+/* Temporary md-icon Fix
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.paypal-icon {
+  height: 83.33%;
+  width: 83.33%;
+  //@include absolute-height(20px);
+  //@include absolute-width(20px);
+}
+.bitcoin-icon {
+  height: 95.83%;
+  //width: 95.83%;
+  //@include absolute-height(23px);
+  //@include absolute-width(23px);
+}
+.twitter-icon {
+  height: 83.33%;
+  width: 95.83%;
+  //@include absolute-height(20px);
+}
+
+/* Brand
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.brand {
+  display: inline-block;
+  cursor: pointer;
+  &.stripes,
+  &.name {
+    &:hover,
+    &:active {
+      // Gonna change this to something prettier
+      background-color: #222;
+    }
+  }
+}

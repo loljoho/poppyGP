@@ -3,10 +3,7 @@
 
   angular.module('poppyGP', [
 
-    'poppyGP.core',
-
-    'poppyGP.components',
-    'poppyGP.layout'
+    'poppyGP.core'
 
     ]);
 

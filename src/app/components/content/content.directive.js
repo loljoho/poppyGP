@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('poppyGP.layout')
+    .module('poppyGP')
     .directive('gpContent', gpContentDirective);
 
   /** @ngInject */
@@ -11,7 +11,7 @@
       restrict: 'E',
       replace: false,
       transclude: true,
-      templateUrl: 'app/layout/content/content.html',
+      templateUrl: 'app/components/content/content.html',
       controller: 'ContentController',
       controllerAs: 'vm',
       bindToController: true

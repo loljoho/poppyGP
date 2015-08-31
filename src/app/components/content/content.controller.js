@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('poppyGP.layout')
+    .module('poppyGP')
     .controller('ContentController', ContentController);
 
 
