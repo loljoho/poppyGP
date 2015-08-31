@@ -1,3 +1,16 @@
+
+
+
+
+/* Video Flex Dimensions
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$video-height-xs:   33.3%;
+$video-height-sm:   40.0%;
+$video-width-sm:    60%;
+$video-width-md:    65%;
+$video-width-lg:    70%;
+$video-width-xl:    75%;
+
 gp-video {
   box-sizing: border-box;
   display: flex;
@@ -22,6 +35,7 @@ gp-video {
 @media (min-width: $viewport-sm) {
   gp-video {
     @include absolute-height(100%);
+    width: 100%;
   }
 }
 
@@ -46,7 +60,7 @@ gp-video {
 // Viewports 600 - 960px
 // ------------------------------
 @media (min-width: $viewport-sm) and (max-width: $viewport-lg - 1) {
-  gp-video {
+  gp-video.fullscreen {
     @include video-width($video-width-sm);
   }
 }
@@ -55,7 +69,7 @@ gp-video {
 // Viewports 960 - 1200px
 // ------------------------------
 @media (min-width: $viewport-md) and (max-width: $viewport-xl - 1) {
-  gp-video {
+  gp-video.fullscreen {
     @include video-width($video-width-md);
   }
 }
@@ -64,7 +78,7 @@ gp-video {
 // Viewports 1200 - 1600px
 // ------------------------------
 @media (min-width: $viewport-lg) and (max-width: $viewport-xl - 1) {
-  gp-video {
+  gp-video.fullscreen {
     @include video-width($video-width-lg);
   }
 }
@@ -73,7 +87,7 @@ gp-video {
 // Viewports 1600px+
 // ------------------------------
 @media (min-width: $viewport-xl) {
-  gp-video {
+  gp-video.fullscreen {
     @include video-width($video-width-xl);
   }
 }

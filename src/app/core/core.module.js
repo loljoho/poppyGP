@@ -5,13 +5,12 @@
     .module('poppyGP.core', [
       'ngAnimate',
       'ngCookies',
+      'ngMaterial',
       'ngTouch',
       'ngResource',
-      'ngSanitize',
-
-      'angular-oauth2'
+      'ngSanitize'
 
 
-      ]);
+    ]);
 
 })();

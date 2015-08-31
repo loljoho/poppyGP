@@ -12,16 +12,12 @@
       replace: false,
       transclude: true,
       templateUrl: 'app/layout/content/content.html',
-      controller: ContentController,
+      controller: 'ContentController',
       controllerAs: 'vm',
       bindToController: true
     };
 
     return directive;
-
-    function ContentController() {
-
-    }
 
   }
 
