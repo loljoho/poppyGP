@@ -18,12 +18,12 @@
 
 
     /** @ngInject */
-    function NavbarController() {
+    function NavbarController($mdSidenav) {
       var vm = this;
 
       vm.buttons    = [];
 
-      vm.toggleBrand = toggleBrand;
+      vm.toggleSidenav = toggleSidenav;
 
       activate();
 
@@ -55,7 +55,7 @@
         }];
       }
 
-      function toggleBrand() {
+      function toggleSidenav() {
 
       }
 
