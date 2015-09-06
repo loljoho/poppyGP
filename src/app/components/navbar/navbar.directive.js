@@ -17,12 +17,10 @@
 
 
     /** @ngInject */
-    function NavbarController($mdSidenav) {
+    function NavbarController() {
       var vm = this;
 
       vm.buttons    = [];
-
-      vm.toggleSidenav = toggleSidenav;
 
       activate();
 
@@ -52,10 +50,6 @@
           icon  : 'assets/svg/menu.svg',
           svg   : 'M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z'
         }];
-      }
-
-      function toggleSidenav() {
-
       }
 
     }

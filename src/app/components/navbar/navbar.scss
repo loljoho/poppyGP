@@ -25,6 +25,16 @@ $brand-text-font-size:        20px;
 
 md-toolbar.navbar {
 
+  z-index:          1000;
+  width:            100%;
+  min-width:        100%;
+  max-width:        100%;
+  position:         absolute;
+  top:              0;
+  left:             0;
+  right:            0;
+
+
   font-size:        $navbar-font-size;
   background-color: $navbar-background-color;
 

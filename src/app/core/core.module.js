@@ -3,6 +3,8 @@
 
   angular
     .module('poppyGP.core', [
+
+      // Angular Modules
       'ngAnimate',
       'ngCookies',
       'ngMaterial',
@@ -10,7 +12,7 @@
       'ngResource',
       'ngSanitize'
 
-
+      // 3rd Party Modules
     ]);
 
 })();

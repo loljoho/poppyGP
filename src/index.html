@@ -21,7 +21,8 @@
   <script src="../bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 </head>
-<body ng-cloak>
+<body ng-controller="MainController as main"
+      ng-cloak>
   <!--[if lt IE 10]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -32,6 +33,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <gp-navbar>
+
   </gp-navbar>
 
 
@@ -40,16 +42,17 @@
   <!-- Main Content
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <div class="main container" role="main">
-
-
+  <div class="main-container"
+       role="main"
+       layout="row">
 
 
 
     <!-- Video Player
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <gp-video>
+    <gp-video flex>
+
     </gp-video>
 
 
@@ -61,6 +64,18 @@
       </gp-content>
     </div>
     -->
+
+
+
+    <!-- Sidebar
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <md-sidenav md-component-id="right"
+                class="md-sidenav-right gp-sidebar"
+                md-is-locked-open="main.isLockedOpen()">
+
+
+
+    </md-sidenav>
 
 
   </div>

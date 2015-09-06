@@ -1,0 +1,20 @@
+
+
+/* Full Page & Overflow
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html, body, .main-container {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  @include absolute-height(100%);
+  @include absolute-width(100%);
+  margin: 0;
+  background-color: $main-background;
+}
+
+
+/* Main Container
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.main-container {
+  margin-top: 36px;
+  padding-bottom: 36px;
+}
