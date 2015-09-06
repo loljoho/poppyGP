@@ -4,81 +4,87 @@
 $navbar-height:               36px;
 $navbar-padding:              16px;
 
+// Navbar Buttons
+// ------------------------------
 $navbar-font-size:            18px;
-$navbar-font-spacing:         0.005em;
-$navbar-font-weight:          400;
 $navbar-background-color:     rgba(34, 34, 34, 1.00);
 
-$navbar-font-color:           rgba(255, 255, 255, 1.00);
-$navbar-font-color-secondary: rgba(255, 255, 255, 0.60);
-$navbar-font-color-disabled:  rgba(255, 255, 255, 0.20);
-$navbar-font-color-accent:    $gpq-color-base-blue;
-$navbar-font-color-alert:     $gpq-color-base-red;
-
-$navbar-button-margin:        6px;
+// Navbar Buttons
+// ------------------------------
 $navbar-button-height:        24px;
 $navbar-button-width:         24px;
-$navbar-button-padding:       2px;
+$navbar-button-line-height:   24px;
 
-/* Navbar
+// Brand Stripes
+// ------------------------------
+$brand-text-font-size:        20px;
+
+
+/* Navbar Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 md-toolbar.navbar {
 
-  font-size: $navbar-font-size;
-
-  height: $navbar-height;
-  min-height: $navbar-height;
-  max-height: $navbar-height;
+  font-size:        $navbar-font-size;
   background-color: $navbar-background-color;
+
+  // Reduced Height
+  // ------------------------------
+  height:           $navbar-height;
+  min-height:       $navbar-height;
+  max-height:       $navbar-height;
 
   .md-toolbar-tools {
 
-    height: $navbar-height;
-    min-height: $navbar-height;
-    max-height: $navbar-height;
+    height:         $navbar-height;
+    min-height:     $navbar-height;
+    max-height:     $navbar-height;
 
+    // Navbar Buttons
+    // ------------------------------
     .md-icon-button {
-      height: 24px;
-      width: 24px;
-      line-height: 24px;
+      height:       $navbar-button-height;
+      width:        $navbar-button-width;
+      line-height:  $navbar-button-line-height;
     }
 
   }
 }
 
-/* Temporary md-icon Fix
+
+/* Navbar Buttons (temporary md-icon fix)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .paypal-icon {
   height: 83.33%;
-  width: 83.33%;
-  //@include absolute-height(20px);
-  //@include absolute-width(20px);
+  width:  83.33%;
 }
 .bitcoin-icon {
   height: 95.83%;
-  //width: 95.83%;
-  //@include absolute-height(23px);
-  //@include absolute-width(23px);
 }
 .twitter-icon {
   height: 83.33%;
-  width: 95.83%;
-  //@include absolute-height(20px);
+  width:  95.83%;
 }
 
-/* Brand
+
+/* Brand Stripes & Text
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .brand {
-  display: inline-block;
-  cursor: pointer;
-  &.stripes,
-  &.name {
-    &:hover,
-    &:active {
-      // Gonna change this to something prettier
-      background-color: #222;
-    }
+  line-height:      $navbar-button-line-height;
+  height:           $navbar-button-height;
+
+  .brand-stripes,
+  .brand-text {
+    display:        inline-block;
+    vertical-align: text-bottom;
+  }
+
+  // Brand Text
+  // ------------------------------
+  .brand-text {
+    font-size:      $brand-text-font-size;
+    text-transform: none;
   }
 }

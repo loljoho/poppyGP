@@ -10,7 +10,6 @@
     return {
       restrict: 'E',
       replace: true,
-      transclude: true,
       templateUrl: 'app/components/navbar/navbar.html',
       controller: NavbarController,
       controllerAs: 'vm'
