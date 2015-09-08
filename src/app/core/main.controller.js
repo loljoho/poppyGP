@@ -41,7 +41,7 @@
     }
 
     function isLockedOpen() {
-      return $mdMedia('gt-md') && vm.sidebarLock;
+      return vm.sidebarLock;
     }
 
   }

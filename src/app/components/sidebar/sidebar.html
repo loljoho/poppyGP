@@ -1,7 +1,54 @@
-<md-sidenav md-component-id="left"
-            class="md-sidenav-left gp-sidebar"
-            md-is-locked-open="vm.isLockedOpen()">
+<md-toolbar class="sidebar-controls">
+  <div class="md-toolbar-tools">
+    <!-- Sidebar Toggle -->
+    <!-- Fullscreen Toggle -->
+  </div>
+</md-toolbar>
+
+
+<nav class="sidebar-nav"
+     role="navigation">
+
+  <md-tabs class="nav-tabs"
+           md-border-bottom
+           md-stretch-tabs="always"
+           md-no-pagination
+           md-center-tabs
+           md-selected="vm.tabActive">
+    <md-tab ng-repeat="tab in vm.navTabs">
+      <md-tooltip md-delay="500"
+                  md-autohide="true">
+        {{ tab.label }}
+      </md-tooltip>
+      <i class="material-icons">{{ tab.icon }}</i>
+
+    </md-tab>
+  </md-tabs>
+
+</nav>
+
+
+<md-content class="sidebar-content"
+            layout="column"
+            layout-gt-md="row"
+            flex="">
 
 
 
-</md-sidenav>
+  <header class="sidebar-header"
+          layout="row">
+  </header>
+
+  <section class="sidebar-main"
+           layout="row">
+
+  </section>
+
+  <footer class="sidebar-footer"
+          layout="row">
+
+  </footer>
+
+
+
+</md-content>

@@ -1,16 +1,4 @@
-gp-video {
-  box-sizing: border-box;
-  z-index: 1;
 
-  >iframe {
-    @include absolute-height(100%);
-    @include absolute-width(100%);
-  }
-  @include absolute-height(100%);
-}
-@media (max-width: $viewport-sm) {
-
-}
 
 /* Video Flex Dimensions
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -21,7 +9,7 @@ $video-width-md:    65%;
 $video-width-lg:    70%;
 $video-width-xl:    75%;
 
-.gp-video {
+#gp-video {
   box-sizing: border-box;
   display: flex;
 
@@ -43,7 +31,7 @@ $video-width-xl:    75%;
 // Non-Mobile Viewports
 // ------------------------------
 @media (min-width: $viewport-sm) {
-  .gp-video {
+  #gp-video {
     @include absolute-height(100%);
     width: 100%;
   }
@@ -52,7 +40,7 @@ $video-width-xl:    75%;
 // Viewports 450px-
 // ------------------------------
 @media (max-width: $viewport-xs - 1) {
-  .gp-video {
+  #gp-video {
     @include absolute-width(100%);
     @include absolute-height($video-height-xs);
   }
@@ -61,7 +49,7 @@ $video-width-xl:    75%;
 // Viewports 450 - 600px
 // ------------------------------
 @media (min-width: $viewport-xs) and (max-width: $viewport-sm) {
-  .gp-video {
+  #gp-video {
     @include absolute-width(100%);
     @include absolute-height($video-height-sm);
   }
@@ -70,7 +58,7 @@ $video-width-xl:    75%;
 // Viewports 600 - 960px
 // ------------------------------
 @media (min-width: $viewport-sm) and (max-width: $viewport-lg - 1) {
-  .gp-video.fullscreen {
+  #gp-video.fullscreen {
     @include video-width($video-width-sm);
   }
 }
@@ -79,7 +67,7 @@ $video-width-xl:    75%;
 // Viewports 960 - 1200px
 // ------------------------------
 @media (min-width: $viewport-md) and (max-width: $viewport-xl - 1) {
-  .gp-video.fullscreen {
+  #gp-video.fullscreen {
     @include video-width($video-width-md);
   }
 }
@@ -88,7 +76,7 @@ $video-width-xl:    75%;
 // Viewports 1200 - 1600px
 // ------------------------------
 @media (min-width: $viewport-lg) and (max-width: $viewport-xl - 1) {
-  .gp-video.fullscreen {
+  #gp-video.fullscreen {
     @include video-width($video-width-lg);
   }
 }
@@ -97,7 +85,7 @@ $video-width-xl:    75%;
 // Viewports 1600px+
 // ------------------------------
 @media (min-width: $viewport-xl) {
-  .gp-video.fullscreen {
+  #gp-video.fullscreen {
     @include video-width($video-width-xl);
   }
 }
