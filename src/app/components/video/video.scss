@@ -1,4 +1,17 @@
+gp-video {
+  box-size: border-box;
+  display: flex;
+}
 
+@media (min-width: 600px) {
+
+    // UStream Player begins to gracefully degrade
+    // when viewport is less than 480px
+    gp-video > iframe {
+      min-width: 480px !important;
+    }
+
+}
 
 /* Video Flex Dimensions
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
