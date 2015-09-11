@@ -25,7 +25,10 @@
 <body ng-controller="MainController as main"
       ng-cloak>
   <!--[if lt IE 10]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browsehappy">
+      You are using an <strong>outdated</strong> browser.<br/><br/>
+      This web application requires Internet Explorer 10 or higher for optimal viewing experience.<br/><br/>
+      Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
   <![endif]-->
 
 
@@ -50,17 +53,13 @@
 
 
 
-    <!-- Video Player
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-   <md-sidenav class="md-sidenav-left"
-                md-component-id="left"
-                md-is-locked-open="$mdMedia('gt-lg')">
-    <md-toolbar>
-      <div class="md-toolbar-tools">
-        <h2>Schedule</h2>
-      </div>
-    </md-toolbar>
+  <!-- Playlist Sidenav
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <md-sidenav class="md-sidenav-left schedule"
+               md-component-id="left"
+               md-is-locked-open="$mdMedia('gt-lg')">
+    <gp-schedule>
+    </gp-schedule>
    </md-sidenav>
 
 
@@ -71,19 +70,10 @@
     <gp-video flex=""
               flex-gt-sm=""
               layout="row"
-              layout-gt-md="column">
+              layout-gt-md="column"
+              channel-id="20560398">
 
     </gp-video>
-
-
-
-    <!-- Content
-    ––––––––––––––––––––––––––––––––––––––––––––––––––
-    <div class="content-container">
-      <gp-content>
-      </gp-content>
-    </div>
-    -->
 
 
 

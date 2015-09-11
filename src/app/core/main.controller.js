@@ -7,13 +7,10 @@
 
 
   /** @ngInject */
-  function MainController($mdSidenav, $mdMedia, $log) {
+  function MainController($mdSidenav, $log) {
     var vm = this;
 
-    vm.sidebarLock    = true;
-
     vm.toggleSidenav  = toggleSidenav;
-    vm.isLockedOpen   = isLockedOpen;
 
     activate();
 
@@ -21,27 +18,9 @@
     }
 
     function toggleSidenav() {
-      if(vm.sidebarLock) {
-        vm.sidebarLock = !vm.sidebarLock;
-        $mdSidenav('right').close();
-      }
-      else if($mdSidenav('right').isOpen()) {
-        $mdSidenav('right').close().then(function() {
-          vm.sidebarLock = false;
-        });
-      }
-      else if(!$mdSidenav('right').isOpen()) {
-        $mdSidenav('right').open().then(function() {
-          vm.sidebarLock = true;
-        });
-      }
-      else {
-        $log.warn('Some kind of error has occured with the Sidebar!');
-      }
-    }
+      $mdSidenav('left').toggle().then(function() {
 
-    function isLockedOpen() {
-      return vm.sidebarLock;
+      });
     }
 
   }
