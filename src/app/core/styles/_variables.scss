@@ -53,14 +53,24 @@ $video-width-lg:    70%;
 $video-width-xl:    75%;
 
 
-/* Content Flex Dimensions
+
+/* Override Toolbar Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-$content-height-xs: (100 - $video-height-xs);
-$content-height-sm: (100 - $video-height-sm);
-$content-width-sm:  (100 - $video-width-sm);
-$content-width-md:  (100 - $video-width-md);
-$content-width-lg:  (100 - $video-width-lg);
-$content-width-xl:  (100 - $video-width-xl);
+
+
+$toolbar-height:    36px;
+$toolbar-padding:   8px;
+$toolbar-margin:    8px;
+// Typography & Colours
+// ------------------------------
+$toolbar-font-size:            18px;
+$toolbar-background-color:     rgba(34, 34, 34, 1.00);
+
+// Buttons
+// ------------------------------
+$toolbar-button-height:        24px;
+$toolbar-button-width:         24px;
+$toolbar-button-line-height:   24px;
 
 
 /* Angular-Material Easing Curves

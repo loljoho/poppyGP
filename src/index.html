@@ -55,23 +55,33 @@
 
   <!-- Playlist Sidenav
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-   <md-sidenav class="md-sidenav-left schedule"
+  <md-sidenav class="md-sidenav-left schedule"
                md-component-id="left"
                md-is-locked-open="$mdMedia('gt-lg')">
     <gp-schedule>
     </gp-schedule>
-   </md-sidenav>
+  </md-sidenav>
 
 
 
     <!-- Video Player
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <gp-video flex=""
+    <gp-video flex-sm="40"
+              flex-md="45"
               flex-gt-sm=""
               layout="row"
               layout-gt-md="column"
               channel-id="20560398">
+
+      <md-toolbar class="statusbar">
+        <div class="md-toolbar-tools">
+          <span flex=""></span>
+          <!-- Current Track -->
+          Now Playing: {{ main.currentTrack.year }} Round {{ main.currentTrack.round }} - {{ main.currentTrack.name }}
+          <span flex=""></span>
+        </div>
+      </md-toolbar>
 
     </gp-video>
 
@@ -79,13 +89,11 @@
 
     <!-- Sidebar
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <gp-sidebar flex="50"
-                flex-md="45"
-                flex-lg="30"
-                flex-gt-lg="20"
-                layout="row"
-                layout-gt-md="column">
-
+    <gp-sidebar flex=""
+                flex-lg="35"
+                flex-gt-lg="30"
+                layout="column"
+                layout-fill>
     </gp-sidebar>
 
 

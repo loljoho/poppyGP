@@ -1,7 +1,6 @@
-
-
 /* Full Page & Overflow
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 html, body, .main-container {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -14,7 +13,45 @@ html, body, .main-container {
 
 /* Main Container
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .main-container {
   margin-top: 36px;
   padding-bottom: 36px;
+}
+
+
+/* Override md-toolbar Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+md-toolbar {
+  min-height: $toolbar-height;
+  font-size: $toolbar-font-size;
+  padding: 0;
+  .md-toolbar-tools {
+    font-size: $toolbar-font-size;
+    height: $toolbar-height;
+    max-height: $toolbar-height;
+    padding: 0 $toolbar-padding;
+
+    .md-icon-button {
+      height: $toolbar-button-height * 1.5;
+      @include absolute-width($toolbar-button-width * 1.5);
+
+      margin: 0;
+      line-height:  $toolbar-button-line-height;
+
+      svg {
+        display: inline-block;
+        margin: auto;
+      }
+
+      md-ripple-container {
+        height: $toolbar-button-height * 1.5;
+        min-width: $toolbar-button-width * 1.5;
+      }
+    }
+    .md-button.md-icon-button {
+      line-height: $toolbar-button-line-height;
+    }
+  }
 }

@@ -1,4 +1,8 @@
-@media (min-width: 600px) and (max-width: 720px) {
+/* Override md-sidenav Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+@media (min-width: $viewport-md) and (max-width: $viewport-lg) {
   md-sidenav.schedule {
     @include absolute-width(256px);
   }
@@ -8,16 +12,6 @@ gp-schedule {
 
   @include absolute-width(100%);
 
-  padding-top: 36px;
-  box-size: border-box;
-  display: flex;
-
-  md-toolbar {
-    @include absolute-height(24px);
-    >.md-toolbar-tools {
-      @include absolute-height(24px);
-    }
-  }
   md-content {
 
   }

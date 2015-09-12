@@ -15,6 +15,7 @@
       controllerAs: 'vm'
     };
 
+    /* @ngInject */
     function SidebarController() {
       var vm = this;
 

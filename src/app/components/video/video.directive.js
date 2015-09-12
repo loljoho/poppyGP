@@ -10,7 +10,7 @@
     return {
       restrict: 'E',
       replace: false,
-      transclude: false,
+      transclude: true,
       templateUrl: 'app/components/video/video.html',
       scope: {
         channelId : '=*?channelId',
