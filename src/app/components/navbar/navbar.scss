@@ -1,20 +1,6 @@
 /* Navbar Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-$navbar-height:               36px;
-$navbar-padding:              16px;
-
-// Navbar Buttons
-// ------------------------------
-$navbar-font-size:            18px;
-$navbar-background-color:     rgba(34, 34, 34, 1.00);
-
-// Navbar Buttons
-// ------------------------------
-$navbar-button-height:        24px;
-$navbar-button-width:         24px;
-$navbar-button-line-height:   24px;
-
 // Brand Stripes
 // ------------------------------
 $brand-text-font-size:        20px;
@@ -35,30 +21,9 @@ md-toolbar.navbar {
   right:            0;
 
 
-  font-size:        $navbar-font-size;
-  background-color: $navbar-background-color;
+  font-size:        $toolbar-font-size;
+  background-color: $toolbar-background-color;
 
-  // Reduced Height
-  // ------------------------------
-  height:           $navbar-height;
-  min-height:       $navbar-height;
-  max-height:       $navbar-height;
-
-  .md-toolbar-tools {
-
-    height:         $navbar-height;
-    min-height:     $navbar-height;
-    max-height:     $navbar-height;
-
-    // Navbar Buttons
-    // ------------------------------
-    .md-icon-button {
-      height:       $navbar-button-height;
-      width:        $navbar-button-width;
-      line-height:  $navbar-button-line-height;
-    }
-
-  }
 }
 
 
@@ -66,15 +31,21 @@ md-toolbar.navbar {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .paypal-icon {
-  height: 83.33%;
-  width:  83.33%;
+  svg {
+    height: 83.33%;
+    width:  83.33%;
+  }
 }
 .bitcoin-icon {
-  height: 95.83%;
+  svg {
+    height: 95.83%;
+  }
 }
 .twitter-icon {
-  height: 83.33%;
-  width:  95.83%;
+  svg {
+    height: 83.33%;
+    width:  95.83%;
+  }
 }
 
 
@@ -82,8 +53,8 @@ md-toolbar.navbar {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .brand {
-  line-height:      $navbar-button-line-height;
-  height:           $navbar-button-height;
+  line-height:      $toolbar-button-line-height;
+  height:           $toolbar-button-height;
 
   .brand-stripes,
   .brand-text {
