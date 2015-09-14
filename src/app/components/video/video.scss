@@ -1,104 +1,37 @@
 gp-video {
   box-size: border-box;
   display: flex;
-}
-
-@media (min-width: 600px) {
-
-    // UStream Player begins to gracefully degrade
-    // when viewport is less than 480px
-    gp-video > iframe {
-      min-width: 480px !important;
-    }
-
-}
-
-/* Video Flex Dimensions
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-$video-height-xs:   33.3%;
-$video-height-sm:   40.0%;
-$video-width-sm:    60%;
-$video-width-md:    65%;
-$video-width-lg:    70%;
-$video-width-xl:    75%;
-
-#gp-video {
-  box-sizing: border-box;
-  display: flex;
-
   position: relative;
-  z-index: 1;
-
-  >iframe {
-    @include absolute-height(100%);
-    @include absolute-width(100%);
+  padding-bottom: 36px;
+  .player {
+    //@include absolute-width(100%);
+    //@include absolute-height(100%);
   }
-
-  &.fullscreen {
-    @include absolute-width(100%);
-    @include absolute-height(100%);
+  .statusbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 36px;
+    height: 36px;
+    background-color: transparent;
+    .md-toolbar-tools {
+      background-color: transparent;
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: ($viewport-sm - 1)) {
+  .player {
+    //@include absolute-height(100%);
   }
 }
 
-
-// Non-Mobile Viewports
-// ------------------------------
 @media (min-width: $viewport-sm) {
-  #gp-video {
-    @include absolute-height(100%);
-    width: 100%;
+
+  // UStream Player begins graceful degradation when width < 480px
+  .player {
+    min-width: 480px !important;
   }
-}
 
-// Viewports 450px-
-// ------------------------------
-@media (max-width: $viewport-xs - 1) {
-  #gp-video {
-    @include absolute-width(100%);
-    @include absolute-height($video-height-xs);
-  }
-}
-
-// Viewports 450 - 600px
-// ------------------------------
-@media (min-width: $viewport-xs) and (max-width: $viewport-sm) {
-  #gp-video {
-    @include absolute-width(100%);
-    @include absolute-height($video-height-sm);
-  }
-}
-
-// Viewports 600 - 960px
-// ------------------------------
-@media (min-width: $viewport-sm) and (max-width: $viewport-lg - 1) {
-  #gp-video.fullscreen {
-    @include video-width($video-width-sm);
-  }
-}
-
-
-// Viewports 960 - 1200px
-// ------------------------------
-@media (min-width: $viewport-md) and (max-width: $viewport-xl - 1) {
-  #gp-video.fullscreen {
-    @include video-width($video-width-md);
-  }
-}
-
-
-// Viewports 1200 - 1600px
-// ------------------------------
-@media (min-width: $viewport-lg) and (max-width: $viewport-xl - 1) {
-  #gp-video.fullscreen {
-    @include video-width($video-width-lg);
-  }
-}
-
-
-// Viewports 1600px+
-// ------------------------------
-@media (min-width: $viewport-xl) {
-  #gp-video.fullscreen {
-    @include video-width($video-width-xl);
-  }
 }

@@ -1,7 +1,29 @@
 <md-toolbar class="sidebar-controls">
   <div class="md-toolbar-tools">
-    <!-- Sidebar Toggle -->
-    <!-- Fullscreen Toggle -->
+
+    <!-- Top-left close button on regular viewports -->
+    <md-button class="md-icon-button"
+               hide-sm
+               aria-label="Close Content">
+      <md-tooltip md-delay="500"
+                  md-autohide>
+        Close Content
+      </md-tooltip>
+      <md-icon md-svg-src="assets/svg/arrow-right.svg" class="menu-icon"></md-icon>
+    </md-button>
+
+    <span flex=""></span>
+
+    <!-- Top-right close button on small viewports -->
+    <md-button class="md-icon-button"
+               hide-gt-sm
+               aria-label="Close Content">
+      <md-tooltip md-delay="500"
+                  md-autohide>
+        Close Content
+      </md-tooltip>
+      <md-icon md-svg-src="assets/svg/close.svg" class="menu-icon"></md-icon>
+    </md-button>
   </div>
 </md-toolbar>
 
@@ -29,25 +51,11 @@
 
 
 <md-content class="sidebar-content"
-            layout="column"
-            layout-gt-md="row"
             flex="">
+  <iframe class="kiwiirc"
+          src="https://kiwiirc.com/client/irc.snoonet.org/?nick=poppyGP-?#f1">
+  </iframe>
 
-
-
-  <header class="sidebar-header"
-          layout="row">
-  </header>
-
-  <section class="sidebar-main"
-           layout="row">
-
-  </section>
-
-  <footer class="sidebar-footer"
-          layout="row">
-
-  </footer>
 
 
 
